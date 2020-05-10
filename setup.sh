@@ -12,36 +12,8 @@ setup () {
 	sleep 3
 	clear
 	cd /bin
-	echo "#!/bin/sh" >> zsh2
-	echo "bash ~/zsh-theme-for-Os/zsh.sh" >> zsh2
+	echo "#!/data/data/commtermux/files/usr/bin/sh" >> zsh-kali
+	echo "bash ~/kali-with-zsh_theme/kali-install.sh" >> zsh-kali
 	chmod 777 zsh2
-	printf "\n\n\033[1;92m Now you can use :- zsh2\n"
+	printf "\n\n\033[1;92m Now you can use :- zsh-kali\n"
 	}
-	g() {
-		cd $PREFIX/bin
-		if [ -e python ];then
-		echo -e "\033[1;92m Done"
-		else
-		echo -e "\033[1;93m Installing...."
-		pkg install python > /dev/null 2>&1
-		printf "\033[1;93m Done\n\n"
-		fi
-		}
-		f() {
-		cd $PREFIX/bin
-		if [ -e figlet ];then
-		echo -e "\033[1;92m Done"
-		else
-		echo -e "\033[1;93m Installing...."
-		pkg install figlet
-		printf "\033[1;93m Done\n\n"
-		fi
-		}
-		set() {
-			printf "\n\n\033[1;96m Checking python "
-			g
-			printf "\033[1;96m \n\n Checking Figlet"
-			f
-			printf "\033[1;96m Wget [ w ]\n\n"
-			}
-			set
