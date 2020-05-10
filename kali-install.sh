@@ -39,3 +39,4 @@ R () {
 				else
 				fol
 				bash setup.sh
+				fi
