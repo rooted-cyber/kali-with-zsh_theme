@@ -11,7 +11,7 @@ setup () {
 	printf "\n\033[1;92m All installed\n"
 	sleep 3
 	clear
-	cd /bin
+	cd $PREFIX/bin
 	echo "#!/data/data/commtermux/files/usr/bin/sh" >> zsh-kali
 	echo "bash ~/kali-with-zsh_theme/kali-install.sh" >> zsh-kali
 	chmod 777 zsh-kali
