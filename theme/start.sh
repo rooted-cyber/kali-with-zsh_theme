@@ -1,7 +1,8 @@
 R () {
 	cd $PREFIX/bin
 	if [ -e python ];then
-	python ~/kali-with-zsh-theme/.random.py
+	cd ~/kali-with-zsh_theme
+	python .random.py
 	else
 	pkg install python
 	python ~/kali-with-zsh_theme/.random.py
@@ -27,19 +28,18 @@ R () {
 			printf "\nCloning successfull\n\n"
 			}
 			tr() {
-				cd ~/kali-fs/root
+				cd ~
 				if [ -e .termux ];then
 				R
-				cd ~/kali-fs/root/.termux
+				cd ~/.termux
 				printf "\nDownloading font� \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
 				printf "\n Seccessfully download\n"
 				else
 				R
-				mkdir ~/kali-fs/root/.termux
-				cd ~/kali-fs/root/.termux
-				pwd
+				mkdir ~/.termux
+				cd ~/.termux
 				printf "\nDownloading font� \n\n"
 				wget https://raw.githubusercontent.com/rooted-cyber/good/master/zsh/font.ttf
 				R
@@ -91,7 +91,7 @@ R () {
 			R
 			printf "\n\n Installing..\n\n"
 			R
-			printf "\n cloning powerlevel10k approx. 80MB\n"
+			printf "\n cloning powerlevel10k approx. 75MB\n"
 			sleep 1
 			cd ~/kali-fs/root
 			git clone https://github.com/romkatv/powerlevel10k
