@@ -19,7 +19,9 @@ R () {
 				cd ~
 				if [ -e ~/kali-fs/root ];then
 				fol
+				#cd /sdcard/Github/kali*
 				cd theme
+				read
 				cp -f kali $PREFIX/bin
 				chmod 700 $PREFIX/bin/kali
 				cp -f .p10k.zsh ~/kali-fs/root
@@ -29,6 +31,7 @@ R () {
 				else
 				fol
 				cp -f kali.sh ~
+				cd ~
 				bash kali.sh
 				fi
 				}
@@ -38,3 +41,4 @@ R () {
 				fol
 				th
 				}
+				menu2

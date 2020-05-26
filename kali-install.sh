@@ -18,6 +18,7 @@ R () {
 			kali-zsh () {
 				fol
 				cp kali.sh ~
+				cd ~
 				bash kali.sh
 				fol
 				bash theme.sh
