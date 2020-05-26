@@ -1,7 +1,7 @@
 R () {
 	cd $PREFIX/bin
 	if [ -e python ];then
-	cd ~/kali-with-zsh-theme
+	cd ~/kali-with-zsh_theme
 	python .random.py
 	else
 	pkg install python
